@@ -1,0 +1,84 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Color de fondo general */
+  }
+  
+  .container {
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido */
+    padding: 20px; /* Espaciado interno */
+  }
+  
+  /* Estilos para el encabezado */
+  .header {
+    background-color: #2196f3; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos para el pie de página */
+  .footer {
+    background-color: #2196f3; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos para el botón de alternar */
+  .toggle-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #2196f3; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el contenedor principal */
+  .main-content {
+    display: flex; /* Utiliza flexbox para distribuir los elementos */
+  }
+  
+  /* Estilos para el contenedor del side bar */
+  .sidebar-container {
+    flex: 0 0 250px; /* Fija un ancho de 250px para el side bar */
+    background-color: #e3f2fd; /* Color de fondo azul claro */
+    transition: width 0.3s ease; /* Transición suave para la animación de expansión */
+  }
+  
+  /* Estilos para el contenedor del contenido principal */
+  .data-container {
+    flex-grow: 1; /* Permite que el contenido principal crezca para ocupar el espacio restante */
+    padding: 20px; /* Espaciado interno */
+    transition: margin-left 0.3s ease; /* Transición suave para la animación de expansión */
+  }
+  
+  /* Estilos específicos cuando el side bar está expandido */
+  .sidebar-container.open {
+    width: 250px;
+  }
+  
+  .data-container.expanded {
+    margin-left: 250px;
+  }
+  
+  /* Estilos para las listas en el side bar */
+  .list-item {
+    padding: 10px;
+  }
+  
+  /* Estilos para los enlaces en el side bar */
+  .list-item a {
+    color: #333; /* Color del texto del enlace */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  .list-item a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+  }
+  
