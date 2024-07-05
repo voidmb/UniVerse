@@ -84,17 +84,17 @@ import InputTable from "./InputTable";
 // Pro Version - Render as you fetch
 // const apiData1 = fetchData("https://cities-qd9i.onrender.com/agents");
 // const data1 = apiData1.read();
-const apiData = fetchData("https://localhost:7119/api/UniVerse/AllTrajectory"); 
+//const apiData = fetchData("https://localhost:7119/api/UniVerse/AllTrajectory"); 
 
 function AppTest() {
-  const data = apiData.read();  
-  console.log(data)
+  //const data = apiData.read();  
+  //console.log(data)
   
   return (
     <div>
       <div style={{marginTop: "20px"}}>
         <h1 style={{textAlign: "center", color: "#86868B"}}>Concentrado de Trayecto de Estudiantes</h1>
-        <ConsolidateTableTSU data={data} />
+        {/* <ConsolidateTableTSU data={data} /> */}
         {/* <TrajectoryForm />  */}
       </div>
     </div>

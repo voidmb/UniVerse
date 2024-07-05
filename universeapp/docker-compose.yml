@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"  # Mapeo del puerto del contenedor al puerto del host
+    environment:
+      #- NODE_ENV=production  # Variable de entorno opcional para el entorno de Node.js
+      - NODE_ENV=development  
+    networks:
+      #- backend
+      - frontend
+
+networks:
+  backend:
+    driver: bridge
