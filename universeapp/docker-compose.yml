@@ -11,9 +11,8 @@ services:
       #- NODE_ENV=production  # Variable de entorno opcional para el entorno de Node.js
       - NODE_ENV=development  
     networks:
-      #- backend
-      - frontend
+      - UniverseNetwork
 
 networks:
-  backend:
+  UniverseNetwork:
     driver: bridge
